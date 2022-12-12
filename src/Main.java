@@ -1,5 +1,8 @@
 import transport.Bus;
 import transport.Car;
+import transport.Driver.DriverCategoryB;
+import transport.Driver.DriverCategoryC;
+import transport.Driver.DriverCategoryD;
 import transport.Truck;
 
 public class Main {
@@ -37,5 +40,16 @@ public class Main {
         volvo.PitStop();
         System.out.println("Время лучшего круга - " + volvo.getBestLapTime());
         System.out.println("Максимальная скорость - " + volvo.getMaxSpeed());
+
+        DriverCategoryB igor = new DriverCategoryB("Комаров Игорь Андреевич",
+                true, 10);
+        DriverCategoryC alexey = new DriverCategoryC("Власов Алексей Васильевич",
+                true, 12);
+        DriverCategoryD vladimir = new DriverCategoryD("Ирисов Анатолий Александрович",
+                true, 19);
+        igor.printDriverInformation(corvette);
+        alexey.printDriverInformation(valdai);
+        vladimir.printDriverInformation(hyundai);
+
     }
 }
