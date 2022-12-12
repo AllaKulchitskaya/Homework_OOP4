@@ -28,5 +28,14 @@ public class Main {
         System.out.println(volvo);
         Bus scania = new Bus("Scania", "OmniLink", 9);
         System.out.println(scania);
+        corvette.PitStop();
+        System.out.println("Время лучшего круга - " + corvette.getBestLapTime());
+        System.out.println("Максимальная скорость - " + corvette.getMaxSpeed());
+        dongFeng.PitStop();
+        System.out.println("Время лучшего круга - " + dongFeng.getBestLapTime());
+        System.out.println("Максимальная скорость - " + dongFeng.getMaxSpeed());
+        volvo.PitStop();
+        System.out.println("Время лучшего круга - " + volvo.getBestLapTime());
+        System.out.println("Максимальная скорость - " + volvo.getMaxSpeed());
     }
 }

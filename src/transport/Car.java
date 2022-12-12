@@ -1,6 +1,6 @@
 package transport;
 
-public class Car extends Transport {
+public class Car extends Transport implements Competitive {
 
     public Car(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
@@ -24,4 +24,18 @@ public class Car extends Transport {
     }
 
 
+    @Override
+    public void PitStop() {
+        System.out.println("Автомобилю нужен пит-стоп");
+    }
+
+    @Override
+    public double getBestLapTime() {
+        return (Math.random() * 5);
+    }
+
+    @Override
+    public int getMaxSpeed() {
+        return (int) (Math.random() * 180);
+    }
 }
